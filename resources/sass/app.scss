@@ -1,0 +1,45 @@
+// Bootstrap
+@import "bootstrap/scss/bootstrap";
+// Bootstrap Icons
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+// CSS kustom (dari css/style.css)
+:root {
+    --bs-primary: #4461e0;
+    --bs-primary-rgb: 68, 97, 224;
+}
+
+.bg-primary { background-color: #4461e0 !important; }
+.text-primary { color: #4461e0 !important; }
+.border-primary { border-color: #4461e0 !important; }
+
+// Foto profil (beranda)
+.hero-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #4461e0;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+// Layout utama (sticky footer)
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex: 1;
+}
+
+// Efek hover footer & sosial media
+.hover-white {
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #ffffff !important;
+    }
+}
